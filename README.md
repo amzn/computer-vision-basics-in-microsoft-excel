@@ -20,13 +20,13 @@ Computer Vision is often seen by software developers and others as a hard field 
 
 We will see how to detect a face using a toy example:
 
-![Face Detection in Microsoft Excel](./blob/master/img/Face-Detection.jpg)
+![Face Detection in Microsoft Excel](img/Face-Detection.jpg)
 
 We will also see how to find edges and lines:
 
-![Edge Detection in Microsoft Excel](./blob/master/img/Edges.jpg)
+![Edge Detection in Microsoft Excel](img/Edges.jpg)
 
-![Lines in Microsoft Excel](./blob/master/img/Lines.jpg)
+![Lines in Microsoft Excel](img/Lines.jpg)
 
 ## Expectations from the audience
 
@@ -38,7 +38,7 @@ Some mathematical understanding would be needed:  Those who won't know what weig
 
 The Excel files, available below for downloading, are self-explanatory with notes inserted within.
 
-![Screenshot of an Excel file](./blob/master/img/Hough-Transform-50p.jpg)
+![Screenshot of an Excel file](img/Hough-Transform-50p.jpg)
 
 The work was done using Excel 2016 on Windows; it should however open in other versions of Excel.
 
@@ -48,29 +48,29 @@ Please honor the license terms included at the end of this page.
 
 Before opening the Excel file(s), change Excel Formula Calculation to "Manual" since some calculations (Hough Transform specifically) are time-consuming (say an hour). Then trigger recalculation manually as per need.  (All screenshots shown below are for Excel 2016 on Windows.)
 
-![Excel Formulas, Change to Manual](./blob/master/img/Excel-Formulas-Change-to-Manual.jpg)
+![Excel Formulas, Change to Manual](img/Excel-Formulas-Change-to-Manual.jpg)
 
 Also, uncheck "Recalculate workbook before saving", else Excel will recalculate all the formulas every time you save the files.
 
-![Don't Recalculate Workbook before Saving](./blob/master/img/Dont-Recalculate-Workbook-before-Saving.jpg)
+![Don't Recalculate Workbook before Saving](img/Dont-Recalculate-Workbook-before-Saving.jpg)
 
 Note:  Be sure to revert these settings once you are done.
 
 Those familiar with R1C1 formula reference style in Excel, or those adventurous, should try switching to it by looking in Excel options and turning it on.  See the screenshot below and check the box to enable it.  This changes the formulas from "D5" type format to a relative style like "R[-1]C[2]" (absolute references also allowed as "R4C5" for example), bringing it closer to programming languages and aiding understanding.
 
-![Excel R1C1 Formula Reference Style](./blob/master/img/Excel-R1C1-Formula-Reference-Style.jpg)
+![Excel R1C1 Formula Reference Style](img/Excel-R1C1-Formula-Reference-Style.jpg)
 
 ### The Excel files
 
 Contents|File|Description
 --------|----|-----------
-The full Excel File|[Computer-Vision-Basics-in-Excel-Full.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-Full.xlsx)|The file is, unsurprisingly, heavy for Excel.  Be patient with it. :-)  Even if it goes busy for an hour, Excel usually does finish up and come back.
-Part 0|[Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx)|<p>Introduction and Outline<br>Start here if following the individual parts.</p>
-Part 1|[Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx)|<p>Edges and Lines<br>One of the sheets in this file, named "Hough", is very compute-intensive.</p>
-Part 2|[Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx)|<p>Corners/Keypoints<br>We do not go into the details of these.</p>
-Part 3|[Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx)|<p>Face Detection<br>Functional face detection demo on the specific input image using (simplified) Viola-Jones object detection framework.</p>
-Part 4|[Computer-Vision-Basics-in-Excel-4-Text.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-4-Text.xlsx)|<p>Character Recognition<br>A toy example that recognizes uppercase E's in the image.</p>
-Part 5|[Computer-Vision-Basics-in-Excel-5-Related-Works.xlsx](./blob/master/Computer-Vision-Basics-in-Excel-5-Related-Works.xlsx)|Related prior works with images in Excel
+The full Excel File|[Computer-Vision-Basics-in-Excel-Full.xlsx](Computer-Vision-Basics-in-Excel-Full.xlsx)|The file is, unsurprisingly, heavy for Excel.  Be patient with it. :-)  Even if it goes busy for an hour, Excel usually does finish up and come back.
+Part 0|[Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx](Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx)|<p>Introduction and Outline<br>Start here if following the individual parts.</p>
+Part 1|[Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx](Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx)|<p>Edges and Lines<br>One of the sheets in this file, named "Hough", is very compute-intensive.</p>
+Part 2|[Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx](Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx)|<p>Corners/Keypoints<br>We do not go into the details of these.</p>
+Part 3|[Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx](Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx)|<p>Face Detection<br>Functional face detection demo on the specific input image using (simplified) Viola-Jones object detection framework.</p>
+Part 4|[Computer-Vision-Basics-in-Excel-4-Text.xlsx](Computer-Vision-Basics-in-Excel-4-Text.xlsx)|<p>Character Recognition<br>A toy example that recognizes uppercase E's in the image.</p>
+Part 5|[Computer-Vision-Basics-in-Excel-5-Related-Works.xlsx](Computer-Vision-Basics-in-Excel-5-Related-Works.xlsx)|Related prior works with images in Excel
 
 ## Questions and Answers
 
@@ -86,7 +86,7 @@ While the files open in [LibreOffice](https://www.documentfoundation.org/) (test
 
 Please follow this blog: https://alvinalexander.com/blog/post/java/getting-rgb-values-for-each-pixel-in-image-using-java-bufferedi and output data into a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) which Excel readily opens.
 
-Here are two more images imported into Excel, ready for use: [Einstein](./blob/master/Image-Einstein.xlsx), [Pillars](./blob/master/Image-Pillars.xlsx).  Note that the Face Detection parameters used during the talk would likely fail to detect Einstein's face as the Haar-like features were fine-tuned by hand for detecting Mona Lisa's face in just that image.  However, the method can again be easily fine-tuned for Einstein's face, AND, when the parameters are [calculated using Machine Learning](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework#Components_of_the_framework), it works on nearly all frontal-looking faces (assuming not occluded, not too small, etc.).  See question 6 below for further details on this.
+Here are two more images imported into Excel, ready for use: [Einstein](Image-Einstein.xlsx), [Pillars](Image-Pillars.xlsx).  Note that the Face Detection parameters used during the talk would likely fail to detect Einstein's face as the Haar-like features were fine-tuned by hand for detecting Mona Lisa's face in just that image.  However, the method can again be easily fine-tuned for Einstein's face, AND, when the parameters are [calculated using Machine Learning](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework#Components_of_the_framework), it works on nearly all frontal-looking faces (assuming not occluded, not too small, etc.).  See question 6 below for further details on this.
 
 ### Q3:  Why was the green channel of the image used, and not red or blue?
 
@@ -94,7 +94,7 @@ Of the three primary color channels, red, green and blue, green contributes the 
 
 Ideally, the image should be converted to grayscale first, or luminosity values should be computed (see [here](https://en.wikipedia.org/wiki/CIE_1931_color_space)).  This was skipped just for simplicity of explanation.
 
-![Why Green?](./blob/master/img/Why-Green.jpg)
+![Why Green?](img/Why-Green.jpg)
 
 ### Q4:  Are the techniques presented still relevant, or are they replaced by deep neural networks?
 
@@ -167,4 +167,4 @@ For practical implementation, there are many books on OpenCV, a common Computer 
 
 Copyright 2018-20 Amazon.com, Inc. or its affiliates. All Rights Reserved.  SPDX-License-Identifier:  CC-BY-NC-SA-4.0
 
-This work is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License.  See the [LICENSE](./blob/master/LICENSE) file.  It cannot be used for commercial training or lectures.
+This work is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License.  See the [LICENSE](LICENSE) file.  It cannot be used for commercial training or lectures.
