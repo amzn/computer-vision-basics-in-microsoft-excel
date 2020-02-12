@@ -64,7 +64,7 @@ Those familiar with R1C1 formula reference style in Excel, or those adventurous,
 
 Contents|File|Description
 --------|----|-----------
-The full Excel File|[Computer-Vision-Basics-in-Excel-Full.xlsx](Computer-Vision-Basics-in-Excel-Full.xlsx)|The file is, unsurprisingly, heavy for Excel.  Be patient with it. :-)  Even if it goes busy for an hour, Excel usually does finish up and come back.
+The full Excel File|[Computer-Vision-Basics-in-Excel.xlsx](Computer-Vision-Basics-in-Excel.xlsx)|The file is, unsurprisingly, heavy for Excel.  Be patient with it. :-)  Even if it goes busy for an hour, Excel usually does finish up and come back.
 Part 0|[Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx](Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx)|<p>Introduction and Outline<br>Start here if following the individual parts.</p>
 Part 1|[Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx](Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx)|<p>Edges and Lines<br>One of the sheets in this file, named "Hough", is very compute-intensive.</p>
 Part 2|[Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx](Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx)|<p>Corners/Keypoints<br>We do not go into the details of these.</p>
