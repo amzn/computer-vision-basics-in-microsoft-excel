@@ -7,6 +7,7 @@ Collaborator: [Venkataramanan Subramanian](https://www.linkedin.com/in/venkatara
 Computer Vision is often seen by software developers and others as a hard field to get into.  In this blog, we'll learn Computer Vision from basics using sample algorithms implemented within Microsoft Excel, using a series of one-liner Excel formulas.  We'll use a surprise trick that helps us implement and visualize algorithms like Face Detection, Hough Transform, etc., within Excel, with no dependence on any script or a third-party plugin.
 
 ![Microsoft Excel Trick for Spreadsheet Images](img/Excel-Trick.gif)
+
 Outline of the steps to visualize a spreadsheet as an image
 
 ## Praise for the work
