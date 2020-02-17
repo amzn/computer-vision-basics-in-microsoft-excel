@@ -10,7 +10,7 @@ Computer Vision is often seen by software developers and others as a hard field 
 
 Outline of the steps to visualize a spreadsheet as an image
 
-## Praise for the work
+## Quotes from users
 
 >"Very cool to see that with 'simple' Excel formulas you can do some real computer vision."
 
