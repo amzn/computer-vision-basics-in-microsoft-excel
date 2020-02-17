@@ -10,15 +10,13 @@ Computer Vision is often seen by software developers and others as a hard field 
 
 Outline of the steps to visualize a spreadsheet as an image
 
-## Quotes from users
+## Feedback quotes
+
+>"Its amazing to see an image show up on the Excel sheet as you zoom out and numbers appear as you zoom back in."
 
 >"Very cool to see that with 'simple' Excel formulas you can do some real computer vision."
 
->"That was a very unique talk, great that you are sharing it to a wider audience!"
-
 >"... used Excel to explain the core concepts and algorithms so clear that I feel I could start working with it right now! ..."
-
->"... Fantastic idea.  Progression of material was very coherent."
 
 ## Preview of what we'll achieve
 
