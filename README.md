@@ -4,23 +4,29 @@ By [Alok Govil](https://www.linkedin.com/in/alokgovil/), Principal Engineer, Ama
 
 Collaborator: [Venkataramanan Subramanian](https://www.linkedin.com/in/venkataramanansubramanian/), Principal Engineer, Amazon
 
-Computer Vision is often seen by software developers and others as a hard field to get into.  In this blog, we'll learn Computer Vision from basics using sample algorithms implemented within Microsoft Excel, using a series of one-liner Excel formulas.  We'll use a surprise trick that helps us implement and visualize algorithms like Face Detection, Hough Transform, etc., within Excel, with no dependence on any script or a third-party plugin.
+Computer Vision is often seen by software developers and others as a hard field to get into.  In this article, we'll learn Computer Vision from basics using sample algorithms implemented within Microsoft Excel, using a series of one-liner Excel formulas.  We'll use a surprise trick that helps us implement and visualize algorithms like Face Detection, Hough Transform, etc., within Excel, with no dependence on any script or a third-party plugin.
 
 ![Microsoft Excel Trick for Spreadsheet Images](img/Excel-Trick.gif)
 
-Outline of the steps to visualize a spreadsheet as an image
+Figure 1:  Outline of the steps to visualize a spreadsheet as an image.  The spreadsheet, and thereby the image, is then manipulated step by step using formulas.
 
-## Feedback quotes
+## Selected Feedback Quotes
 
 >"Its amazing to see an image show up on the Excel sheet as you zoom out and numbers appear as you zoom back in."
 
 >"Very cool to see that with 'simple' Excel formulas you can do some real computer vision."
 
+>"... never thought you can explain CV through simple Excel formulas and transformations. Hats-off :)"
+
 >"... used Excel to explain the core concepts and algorithms so clear that I feel I could start working with it right now! ..."
 
-## Preview of what we'll achieve
+>"I've been wanting to learn how CV works for a while, and this was probably the best transition from data to visuals I've ever seen."
 
-We will see how to detect a face using a toy example:
+>"Just incredible build up from small to great one step at a time."
+
+## Preview of what we will achieve
+
+We will see how to detect a face using a toy example:  (Below are screenshots of Excel shreadsheets.)
 
 ![Face Detection in Microsoft Excel](img/Face-Detection.jpg)
 
@@ -36,17 +42,21 @@ No prior background in Computer Vision should be needed to follow the material. 
 
 Some mathematical understanding would be needed:  Those who won't know what weighted average is won't be able to follow much.  Understanding of partial derivatives would be helpful but not required.  Most complex mathematical concept used is [eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors), but again the readers should be able to follow even if they do not know or remember the same.
 
-## Downloads
+## Instructions
 
-The Excel files, available below for downloading, are self-explanatory with notes inserted within.  Please follow the sheets step-by-step.
+The crux of the material is in the Excel files (*.xlsx) available below for downloading.  These are self-explanatory with notes inserted within.  Please follow the sheets step-by-step.  You may need to change zoom levels as per your monitor resolution.
 
 ![Screenshot of an Excel file](img/Hough-Transform-50p.jpg)
 
-The work was done using Excel 2016 on Windows; it should however open in other versions of Excel.
+### Software requirements
 
-### Instructions
+The work was created using Excel 2016 on Windows; it should however open in other versions of Excel (tested with Excel 2007 on Windows).
 
-Before opening the Excel file(s), change Excel Formula Calculation to "Manual" since some calculations (Hough Transform specifically) are time-consuming (say an hour). Then trigger recalculation manually as per need.
+While the files open in [LibreOffice](https://www.documentfoundation.org/) (tested in version 6.4.0.3 (x64)), it is slow to the level of being unusable.  We have not tested in [Apache OpenOffice](https://www.openoffice.org/).
+
+### Relevant Excel Formula Options
+
+Before opening the Excel file(s), change Excel Formula Calculation to "Manual" since some calculations (Hough Transform specifically) are time-consuming (say an hour).  Then trigger recalculation manually as per need.
 
 ![Excel Formulas, Change to Manual](img/Excel-Formulas-Change-to-Manual.jpg)
 
@@ -60,7 +70,11 @@ Those familiar with R1C1 formula reference style in Excel, or those adventurous,
 
 ![Excel R1C1 Formula Reference Style](img/Excel-R1C1-Formula-Reference-Style.jpg)
 
-### The Excel files
+### Downloads
+
+The full Excel file is more than 50 MB in size.  The same content is also available in smaller parts.
+
+The following can be downloaded by right-clicking.  Alternatively, on left-clicking, Github will take you to preview page from where the raw *.xlsx files can be downloaded.
 
 Contents|File|Description
 --------|----|-----------
@@ -75,17 +89,17 @@ Part 4|[Computer-Vision-Basics-in-Excel-4-Text.xlsx](Computer-Vision-Basics-in-E
 
 Many of the following would make sense only after going through the Excel files above.
 
-### Q1:  What software do I need to open the *.xlsx files?
-
-The work was done using Excel 2016 on Windows; it should however open in other versions of Excel.
-
-While the files open in [LibreOffice](https://www.documentfoundation.org/) (tested in version 6.4.0.3 (x64)), it is slow to the level of being unusable.  We have not tested in [Apache OpenOffice](https://www.openoffice.org/).
-
-### Q2:  How was the image data imported into Excel?
+### Q1:  How was the image data imported into Excel?
 
 You can follow this blog: https://alvinalexander.com/blog/post/java/getting-rgb-values-for-each-pixel-in-image-using-java-bufferedi and output data into a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) which Excel readily opens.
 
-Here are two more images imported into Excel, ready for use: [Einstein](Image-Einstein.xlsx), [Pillars](Image-Pillars.xlsx).  Note that the Face Detection parameters used in the Excel files above would likely fail to detect Einstein's face as the Haar-like features were fine-tuned by hand for detecting Mona Lisa's face in just that image.  However, the method can again be easily fine-tuned for Einstein's face, AND, when the parameters are [calculated using Machine Learning](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework#Components_of_the_framework), it works on most frontal-looking faces (assuming not occluded, not too small, etc.).  See question #7 below for further details on this.
+Here are two more images imported into Excel, ready for use: [Einstein](Image-Einstein.xlsx), [Pillars](Image-Pillars.xlsx).
+
+Note that the Face Detection parameters used in the Excel files would likely fail to detect Einstein's face as the Haar-like features were fine-tuned by hand for detecting Mona Lisa's face in just that image.  However, the method can again be easily fine-tuned for Einstein's face, and, when the parameters are [calculated using Machine Learning](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework#Components_of_the_framework), it works on most frontal-looking faces (assuming not occluded, not too small, etc.).  See question #4 below for further details on this.
+
+### Q2:  Are the techniques presented still relevant, or are they replaced by deep neural networks?
+
+The techniques are still relevant.  Neural networks are taking over for all complex computer vision problems, especially those unsolved by the classical techniques.  For simpler operations, the classical solutions are faster to put together and are usually computationally more efficient.  Also, classical techniques are still the default choice for edge devices (smartphones, web clients) though modern techniques are making an entry notably via hardware acceleration (e.g., [1](https://petewarden.com/2018/06/11/why-the-future-of-machine-learning-is-tiny/), [2](https://petewarden.com/2019/04/14/what-machine-learning-needs-from-hardware/)).
 
 ### Q3:  Why was the green channel of the image used, and not red or blue?  How can I represent color images in Excel in this fashion?
 
@@ -95,11 +109,13 @@ Ideally, the image should be converted to grayscale first, or luminosity values 
 
 ![Why Green?](img/Why-Green.jpg)
 
-One way of representing color images in Excel is referenced in the answer to the question #8 below.
+One way of representing color images in Excel is referenced in the answer to the question #7 below.
 
-### Q4:  Are the techniques presented still relevant, or are they replaced by deep neural networks?
+### Q4:  Why was the watermark face on the ID not detected and yet Mona Lisa's was?
 
-The techniques are still very relevant.  Neural networks are taking over for all complex computer vision problems, especially those unsolved by the classical techniques.  For simpler operations, the classical solutions are faster to put together and are computationally more efficient.  Also, classical techniques are still the default choice for edge devices (smartphones, web clients) though modern techniques are making an entry notably via hardware acceleration (e.g., [1](https://petewarden.com/2018/06/11/why-the-future-of-machine-learning-is-tiny/), [2](https://petewarden.com/2019/04/14/what-machine-learning-needs-from-hardware/)).
+We demonstrated the core concept of [a popular face detection algorithm](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework) using just three [Haar-like features](https://en.wikipedia.org/wiki/Haar-like_feature) and two stages, which were hand-crafted to detect the face of Mona Lisa in that specific image.  The actual features as well as the stages are in practice calculated using Machine Learning, which commonly results in a few thousands of such features, as well as over ten stages.  Then the system is able to detect over 99% of the nearly frontal looking faces (while a separate pre-trained model is available for faces looking nearly sideways in [OpenCV](https://en.wikipedia.org/wiki/OpenCV)).
+
+The face shadow on the right would still be missed by the algorithm since such face images are not included in the training data.  My educated guess further will be that to detect such shadowed faces, the algorithm described would not do a good job, and using neural networks would be recommended.  Likewise, the algorithm we demonstrated is outperformed by a neural networks for "[Labeled faces in the wild](http://vis-www.cs.umass.edu/lfw/)" dataset where faces are often partially occluded too.
 
 ### Q5:  In the OCR example, how do you chose the mask and its orientation?
 
@@ -119,19 +135,13 @@ Handwriting recognition is harder, unsurprisingly.  The best performance is reac
 
 In the example shown in the talk, even the weights of that single neuron were hand-crafted, not actually learned using a training algorithm.  Even a single neuron would do better that the demo when actually trained.
 
-### Q7:  Why was the watermark face on the ID not detected and yet Mona Lisa's was?
-
-We demonstrated the core concept of [a popular face detection algorithm](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework) using just three [Haar-like features](https://en.wikipedia.org/wiki/Haar-like_feature) and two stages, which were hand-crafted to detect the face of Mona Lisa in that specific image.  The actual features as well as the stages are in practice calculated using Machine Learning, which commonly results in a few thousands of such features, as well as over ten stages.  Then the system is able to detect over 99% of the nearly frontal looking faces (while a separate pre-trained model is available for faces looking nearly sideways in [OpenCV](https://en.wikipedia.org/wiki/OpenCV)).
-
-The face shadow on the right would still be missed by the algorithm since such face images are not included in the training data.  My educated guess further will be that to detect such shadowed faces, the algorithm described would not do a good job, and using neural networks would be recommended.  Likewise, the algorithm we demonstrated is outperformed by a neural networks for "[Labeled faces in the wild](http://vis-www.cs.umass.edu/lfw/)" dataset where faces are often partially occluded too.
-
-### Q8:  How did you come up with the idea for using Microsoft Excel for this?
+### Q7:  How did you come up with the idea for using Microsoft Excel for this?
 
 About 1.5 years back, we had to give an introductory talk on Computer Vision to a wide audience within Amazon, many of whom would have been completely unfamiliar with the subject.  We thought about starting from the very basics by showing that an image is essentially a 2D array of numbers (for each color channel for color images) and thought about showing these using Excel.
 
-"Hmm!  If the numbers are in Excel, I could do more with it" ... You get the idea. :-)
+"Hmm!  If the numbers are in Excel, I could do more with it" ... That was the "A-ha" moment.  :-)
 
-It took about seven hours to create the first version for that talk, which did not include Face Detection and Text recognition.  The latter took about eight more hours for the first version.
+It took about seven hours to create the first fully functional version for that talk, which did not include Face Detection and Text recognition.  The latter took about eight more hours for the first version.
 
 We have since then discovered several related works that represent images in Excel using this technique:
 
@@ -140,15 +150,19 @@ We have since then discovered several related works that represent images in Exc
 * 3D Engine in Excel:  [Real 3D Engine - in Excel!!](https://www.youtube.com/watch?v=bFOL9kantXA)
 * 3D Graphics in Excel:  [Microsoft Excel: Revolutionary 3D Game Engine?](https://www.gamasutra.com/view/feature/131968/microsoft_excel_revolutionary_3d_.php)
 
+### Q8:  Can I use the materials for teaching?
+
+Please see the License summary and details below.
+
 ### Q9:  Are there specialized interactive developer environments for Computer Vision?
 
-[Matlab](https://www.mathworks.com/products/matlab.html) is often used for this as it has many Computer Vision functions built-in natively or in toolboxes.  Function "imshow" can be used to instantly display array data as an image.
+[Matlab](https://www.mathworks.com/products/matlab.html) has traditionally been used for this as it has many Computer Vision functions built-in natively or in toolboxes.  Function "imshow" can be used to instantly display array data as an image.
 
 Python- and Notebooks-based tooling is also very popular.
 
 ### Q10:  Is that your passport information on the slides?
 
-All the critical information in the image has been changed like passport number, signatures, etc., including in the machine-readable lines at the bottom of the image.
+Yes, however, all critical information in the image has been changed like passport number, signatures, etc., including in the machine-readable lines at the bottom of the image.
 
 ### Q11:  Why does Hough Transform show artifacts for +/- 45°?
 
