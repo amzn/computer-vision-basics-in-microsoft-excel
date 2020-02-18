@@ -50,7 +50,7 @@ The crux of the material is in the Excel files (*.xlsx) available below for down
 
 ### Software requirements
 
-The work was created using Excel 2016 on Windows; it should however open in other versions of Excel (tested with Excel 2007 on Windows).
+The work was created using Excel 2016 on Windows; it should however open in other versions of Excel (tested with Excel 2007 on Windows, and Excel for Mac).
 
 While the files open in [LibreOffice](https://www.documentfoundation.org/) (tested in version 6.4.0.3 (x64)), it is slow to the level of being unusable.  We have not tested in [Apache OpenOffice](https://www.openoffice.org/).
 
