@@ -26,7 +26,7 @@ Figure 1:  Outline of the steps to visualize a spreadsheet as an image.  The spr
 
 ## Preview of what we will achieve
 
-We will see how to detect a face using a toy example:  (Below are screenshots of Excel shreadsheets.)
+We will see how to detect a face using a toy example:  (Below are screenshots of Excel spreadsheets.)
 
 ![Face Detection in Microsoft Excel](img/Face-Detection.jpg)
 
