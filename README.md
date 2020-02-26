@@ -1,10 +1,10 @@
 # Computer Vision Basics in Microsoft Excel ![Creative Commons License CC-BY-NC-SA-4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
 
-By [Alok Govil](https://www.linkedin.com/in/alokgovil/), Principal Engineer, Amazon
+By [Alok Govil](https://alokgovil.com), Principal Engineer, Amazon ([LinkedIn Profile](https://www.linkedin.com/in/alokgovil/))
 
 Collaborator: [Venkataramanan Subramanian](https://www.linkedin.com/in/venkataramanansubramanian/), Principal Engineer, Amazon
 
-Computer Vision is often seen by software developers and others as a hard field to get into.  In this article, we'll learn Computer Vision from basics using sample algorithms implemented within Microsoft Excel, using a series of one-liner Excel formulas.  We'll use a surprise trick that helps us implement and visualize algorithms like Face Detection, Hough Transform, etc., within Excel, with no dependence on any script or a third-party plugin.
+Computer Vision is often seen by software developers and others as a hard field to get into.  In this article, we'll learn Computer Vision from basics using sample algorithms implemented within Microsoft Excel, using a series of one-liner Excel formulas.  We'll use a surprise trick that helps us demonstrate and visualize algorithms like Face Detection, Hough Transform, etc., within Excel, with no dependence on any script or a third-party plugin.
 
 ![Microsoft Excel Trick for Spreadsheet Images](img/Excel-Trick.gif)
 
@@ -30,6 +30,8 @@ We will see how to detect a face using a toy example:  (Below are screenshots of
 
 ![Face Detection in Microsoft Excel](img/Face-Detection.jpg)
 
+Even the rectangles/lines are drawn using just formulas. :-)
+
 We will also see how to find edges and lines:
 
 ![Edge Detection in Microsoft Excel](img/Edges.jpg)
@@ -52,7 +54,9 @@ The crux of the material is in the Excel files (*.xlsx) available below for down
 
 The work was created using Excel 2016 on Windows; it should however open in other versions of Excel (tested with Excel 2007 on Windows, and Excel for Mac).
 
-While the files open in [LibreOffice](https://www.documentfoundation.org/) (tested in version 6.4.0.3 (x64)), it is slow to the level of being unusable.  We have not tested in [Apache OpenOffice](https://www.openoffice.org/).
+While the files open in [LibreOffice](https://www.documentfoundation.org/) (tested in version 6.4.0.3 (x64)), it is slow to the level of being unusable, even when using native LibreOffice Calc file format.  (See Hacker News discussion on this [here](https://news.ycombinator.com/item?id=22357374).)  We have not tested in [Apache OpenOffice](https://www.openoffice.org/).
+
+On quick testing, it seems to work fine in [WPS Office](https://en.wikipedia.org/wiki/WPS_Office) (tried on Windows 10).
 
 ### Relevant Excel Formula Options
 
@@ -74,16 +78,16 @@ Those familiar with R1C1 formula reference style in Excel, or those adventurous,
 
 The full Excel file is more than 50 MB in size.  The same content is also available in smaller parts.
 
-The following can be downloaded by right-clicking.  Alternatively, on left-clicking, Github will take you to preview page from where the raw *.xlsx files can be downloaded.
+The following may -not- be downloadable by right-clicking and saving.  On left-clicking, Github will take you to preview page from where the raw *.xlsx files can be downloaded.
 
 Contents|File|Description
 --------|----|-----------
-The full Excel File|[Computer-Vision-Basics-in-Excel.xlsx](Computer-Vision-Basics-in-Excel.xlsx)|The file is, unsurprisingly, heavy for Excel.  Be patient with it. :-)  Even if it goes busy for an hour, Excel usually does finish up and come back.
-Part 0|[Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx](Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx)|<p>Introduction and Outline:<br>Start here if following the individual parts.</p>
-Part 1|[Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx](Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx)|<p>Edges and Lines:<br>One of the sheets in this file, named "Hough", is very compute-intensive.</p>
-Part 2|[Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx](Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx)|<p>Corners/Keypoints:<br>We do not go into the details of these.</p>
-Part 3|[Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx](Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx)|<p>Face Detection:<br>Functional face detection demo on the specific input image using (simplified) Viola-Jones object detection framework.</p>
-Part 4|[Computer-Vision-Basics-in-Excel-4-Text.xlsx](Computer-Vision-Basics-in-Excel-4-Text.xlsx)|<p>Character Recognition:<br>A toy example that recognizes uppercase E's in the image.</p>
+The full Excel File|[Computer-Vision-Basics-in-Excel](Computer-Vision-Basics-in-Excel.xlsx)|The file is, unsurprisingly, heavy for Excel.  Be patient with it. :-)  Even if it goes busy for an hour, Excel usually does finish up and come back.
+Part 0|[Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline](Computer-Vision-Basics-in-Excel-0-Introduction-and-Outline.xlsx)|<p>Introduction and Outline:<br>Start here if following the individual parts.</p>
+Part 1|[Computer-Vision-Basics-in-Excel-1-Edges-and-Lines](Computer-Vision-Basics-in-Excel-1-Edges-and-Lines.xlsx)|<p>Edges and Lines:<br>One of the sheets in this file, named "Hough", is very compute-intensive.</p>
+Part 2|[Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors](Computer-Vision-Basics-in-Excel-2-Keypoints-and-Descriptors.xlsx)|<p>Corners/Keypoints:<br>We do not go into the details of these.</p>
+Part 3|[Computer-Vision-Basics-in-Excel-3-Face-Detection](Computer-Vision-Basics-in-Excel-3-Face-Detection.xlsx)|<p>Face Detection:<br>Functional face detection demo on the specific input image using (simplified) Viola-Jones object detection framework.</p>
+Part 4|[Computer-Vision-Basics-in-Excel-4-Text](Computer-Vision-Basics-in-Excel-4-Text.xlsx)|<p>Character Recognition:<br>A toy example that recognizes uppercase E's in the image.</p>
 
 ## Questions and Answers
 
@@ -150,21 +154,44 @@ We have since then discovered several related works that represent images in Exc
 * 3D Engine in Excel:  [Real 3D Engine - in Excel!!](https://www.youtube.com/watch?v=bFOL9kantXA)
 * 3D Graphics in Excel:  [Microsoft Excel: Revolutionary 3D Game Engine?](https://www.gamasutra.com/view/feature/131968/microsoft_excel_revolutionary_3d_.php)
 
+Here are some more related works using Excel:
+
+* [Deep Excel](http://www.deepexcel.net/) (See also: [Hacker News discussion](https://news.ycombinator.com/item?id=11308718).)
+* [Tatsuo Horiuchi | the 73-year old Excel spreadsheet artist](http://www.spoon-tamago.com/2013/05/28/tatsuo-horiuchi-excel-spreadsheet-artist/)
+* A few people have mentioned an implementation of Super Mario Bros in Excel.  However, as reported [here](https://kottke.org/16/08/super-mario-bros-recreated-in-excel), it is not a playable game implementation; it's effectively just a video running inside Excel.
+* See the [Hacker News discussion](https://news.ycombinator.com/item?id=22357374) for a few more.
+
 ### Q8:  Can I use the materials for teaching?
 
 Please see the License summary and details below.
 
-### Q9:  Are there specialized interactive developer environments for Computer Vision?
+### Q9:  Is Excel the right tool for this?
+
+Spreadsheets are not designed for something like this, and the technique is not being recommended for any work or research.  It is however helping many people understand the concepts better.
+
+While Excel has not been designed for this, it has been designed well to have worked surprisingly well for this.  :-)
+
+### Q10:  Does Excel have built-in formulas for Computer Vision?!
+
+No, we believe.  On the very least, this work is not using any of them.  :-)
+
+As noted above, even the rectangles and lines used for annotations are drawn using generic formulas, i.e., not using any potential special formulas available in Excel toolpaks or add-ons.
+
+### Q11:  Are there specialized interactive developer environments for Computer Vision?
 
 [Matlab](https://www.mathworks.com/products/matlab.html) has traditionally been used for this as it has many Computer Vision functions built-in natively or in toolboxes.  Function "imshow" can be used to instantly display array data as an image.
 
 Python- and Notebooks-based tooling is also very popular.
 
-### Q10:  Is that your passport information on the slides?
+### Q12:  Is that your passport information on the slides?
 
 Yes, however, all critical information in the image has been changed like passport number, signatures, etc., including in the machine-readable lines at the bottom of the image.
 
-### Q11:  Why does Hough Transform show artifacts for +/- 45°?
+### Q13:  Why was the photo of Mona Lisa used?  :-)
+
+We just picked an image with no copyright limitations.  :-)
+
+### Q14:  Why does Hough Transform show artifacts for +/- 45°?
 
 Please refer to the answer here: https://stackoverflow.com/questions/33983389/hough-line-transform-artifacts-at-45-degree-angle
 
@@ -184,6 +211,10 @@ For practical implementation, there are many books on OpenCV, a common Computer 
 * Corner detection: See https://en.wikipedia.org/wiki/Harris_Corner_Detector.  Also see other corner-detection algorithms like [FAST](https://en.wikipedia.org/wiki/Features_from_accelerated_segment_test).
 * The following blog talks about feature descriptors very commonly used in Computer Vision: [A short introduction to descriptors](https://gilscvblog.com/2013/08/18/a-short-introduction-to-descriptors/) and [Tutorial on binary descriptors](https://gilscvblog.com/2013/08/26/tutorial-on-binary-descriptors-part-1/).
 * This blog talks about how feature descriptors are used in a sample application: [Image Alignment (Feature Based) using OpenCV (C++/Python)](https://www.learnopencv.com/image-alignment-feature-based-using-opencv-c-python/)
+
+### Hacker News discussion on the work
+
+[https://news.ycombinator.com/item?id=22357374](https://news.ycombinator.com/item?id=22357374)
 
 ## License Summary
 
