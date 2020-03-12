@@ -95,7 +95,7 @@ Many of the following would make sense only after going through the Excel files 
 
 ### Q1:  How was the image data imported into Excel?
 
-You can follow this blog: https://alvinalexander.com/blog/post/java/getting-rgb-values-for-each-pixel-in-image-using-java-bufferedi and output data into a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) which Excel readily opens.
+You can follow [this blog article](https://alvinalexander.com/blog/post/java/getting-rgb-values-for-each-pixel-in-image-using-java-bufferedi) and output data into a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) which Excel readily opens.
 
 Here are two more images imported into Excel, ready for use: [Einstein](Image-Einstein.xlsx), [Pillars](Image-Pillars.xlsx).
 
@@ -121,7 +121,7 @@ We demonstrated the core concept of [a popular face detection algorithm](https:/
 
 The face shadow on the right would still be missed by the algorithm since such face images are not included in the training data.  My educated guess further will be that to detect such shadowed faces, the algorithm described would not do a good job, and using neural networks would be recommended.  Likewise, the algorithm we demonstrated is outperformed by a neural networks for "[Labeled faces in the wild](http://vis-www.cs.umass.edu/lfw/)" dataset where faces are often partially occluded too.
 
-### Q5:  In the OCR example, how do you chose the mask and its orientation?
+### Q5:  In the OCR example, how did you choose the mask and its orientation?
 
 For document [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition) (as opposed to [scene text](https://en.wikipedia.org/wiki/Scene_text) recognition), the document itself is typically straightened first before character recognition is performed for the characters in the document. Therefore, the characters are expected to be nearly upright.
 
@@ -156,7 +156,7 @@ We have since then discovered several related works that represent images in Exc
 
 Here are some more related works using Excel:
 
-* [Deep Excel](http://www.deepexcel.net/) (See also: [Hacker News discussion](https://news.ycombinator.com/item?id=11308718).)
+* [Deep Excel](http://www.deepexcel.net/) (See also: [Hacker News discussion](https://news.ycombinator.com/item?id=11308718))
 * [Tatsuo Horiuchi | the 73-year old Excel spreadsheet artist](http://www.spoon-tamago.com/2013/05/28/tatsuo-horiuchi-excel-spreadsheet-artist/)
 * A few people have mentioned an implementation of Super Mario Bros in Excel.  However, as reported [here](https://kottke.org/16/08/super-mario-bros-recreated-in-excel), it is not a playable game implementation; it's effectively just a video running inside Excel.
 * See the [Hacker News discussion](https://news.ycombinator.com/item?id=22357374) for a few more.
@@ -175,7 +175,7 @@ While Excel has not been designed for this, it has been designed well to have wo
 
 No, we believe.  On the very least, this work is not using any of them.  :-)
 
-As noted above, even the rectangles and lines used for annotations are drawn using generic formulas, i.e., not using any potential special formulas available in Excel toolpaks or add-ons.
+As noted above, even the rectangles and lines used for annotations are drawn using generic formulas, i.e., not using any potential special formulas available in Excel add-ins.
 
 ### Q11:  Are there specialized interactive developer environments for Computer Vision?
 
@@ -199,10 +199,10 @@ Please refer to the answer here: https://stackoverflow.com/questions/33983389/ho
 
 ### Books
 
-Below are two freely-downloadable good books on classical Computer Vision (i.e., before deep learning came into the field):
+Below are references to two freely-downloadable good books on classical Computer Vision (i.e., before deep learning came into the field):
 
 * [Computer Vision: Algorithms and Applications](http://szeliski.org/Book/), Richard Szeliski (2010): This books provides a summary of many computer vision techniques along with research results from academic papers.  The diagrams in the book by themselves are worth browsing through to understand the state of the art in the field till 2010 when the book was published.  The book usually does 'not' give enough detail to allow someone to implement the methods described, though appropriate references are cited.
-* [Computer Vision Metrics](https://link.springer.com/book/10.1007%2F978-1-4302-5930-5): Survey, Taxonomy, and Analysis, Scott Krig (2014): This book provides a good top-level view of computer vision, though often mixed on details.
+* [Computer Vision Metrics: Survey, Taxonomy, and Analysis](https://link.springer.com/book/10.1007%2F978-1-4302-5930-5), Scott Krig (2014): This book provides a good top-level view of computer vision, though is often mixed on details.
 
 For practical implementation, there are many books on OpenCV, a common Computer Vision library like [Learning OpenCV 3: Computer Vision in C++ with the OpenCV Library](http://shop.oreilly.com/product/0636920044765.do), Gary Bradski, Adrian Kaehler
 
