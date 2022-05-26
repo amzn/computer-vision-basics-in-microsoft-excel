@@ -137,7 +137,7 @@ In the talk, a single neuron was used to both scan the image and recognize the l
 
 Handwriting recognition is harder, unsurprisingly.  The best performance is reached when the pen strokes data is available as a function of time (e.g., when recognizing handwriting input on a touch-screen).  References are readily available online for further reading.
 
-In the example shown in the talk, even the weights of that single neuron were hand-crafted, not actually learned using a training algorithm.  Even a single neuron would do better that the demo when actually trained.
+In the example shown in the talk, even the weights of that single neuron were hand-crafted, not actually learned using a training algorithm.  Even a single neuron would do better than the demo when actually trained.
 
 ### Q7:  How did you come up with the idea for using Microsoft Excel for this?
 
@@ -153,6 +153,7 @@ We have since then discovered several related works that represent images in Exc
 * Ray-tracing in Excel:  [The latest thing to support ray tracing is Excel, apparently](https://www.pcgamer.com/the-latest-thing-to-support-ray-tracing-is-excel-apparently/)
 * 3D Engine in Excel:  [Real 3D Engine - in Excel!!](https://www.youtube.com/watch?v=bFOL9kantXA)
 * 3D Graphics in Excel:  [Microsoft Excel: Revolutionary 3D Game Engine?](https://www.gamasutra.com/view/feature/131968/microsoft_excel_revolutionary_3d_.php)
+* [Excelence by BraadWorsten Brigade](https://www.pouet.net/prod.php?which=53021)
 
 Here are some more related works using Excel:
 
